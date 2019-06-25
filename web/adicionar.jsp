@@ -15,17 +15,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body style="background-color: #F9F9F9">
-        <nav class="navbar navbar-dark" style ="background-color: #343A40">
-            <div class ="container">
-                <img src="imagem/icon.png" width="45px">
-
-                <div class="nav navbar-nav navbar-right">
-                    <a style ="text-transform: uppercase;color: white;"> <span class="glyphicon glyphicon-log-out" style="color: white;font-size:20px;"></span> Sair</a>
-                </div>
-
-            </div>
-
-        </nav>
+        <jsp:include page="header.jsp"/>
         <div class="container">
             <div class="page-header" style="margin-top: 5%">
                 <center>
@@ -38,24 +28,24 @@
                 <div class="col-sm-4" id="caixa">
                     <form style="margin-top: 6%">
                         <div class="form-group">
-                            <label for="nome">Nome</label>
+                            <label for="nome">Nome</label> <label class="asterisco">*</label>
                             <input type="text" class="form-control" id="nome">
                         </div>                   
 
                         <div class="form-group">
-                            <label for="empresa">Empresa</label>
+                            <label for="empresa">Empresa</label> <label class="asterisco">*</label>
                             <input type="text" class="form-control" id="empresa">
                         </div>
 
 
                         <div class="form-group">
-                            <label for="cargo">Cargo</label>
+                            <label for="cargo">Cargo</label> <label class="asterisco">*</label>
                             <input type="text" class="form-control" id="cargo">
                         </div>
 
                         <div class="form-group">
-                            <label for="data">Data de Nascimento</label>
-                            <input type="text" class="form-control" id="data" placeholder="dd/mm/aaaa">
+                            <label for="data">Data de Nascimento</label> <label class="asterisco">*</label>
+                            <input type="date" class="form-control" id="data" placeholder="dd/mm/aaaa">
                         </div>
 
                         <a class="btn btn-danger" style="margin-bottom: 4%" href="contato.jsp">Cancelar</a>  

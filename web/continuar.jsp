@@ -16,17 +16,7 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body style="background-color: #F9F9F9">
-        <nav class="navbar navbar-dark" style ="background-color: #343A40">
-            <div class ="container">
-                <img src="imagem/icon.png" width="45px">
-
-                <div class="nav navbar-nav navbar-right">
-                    <a style ="text-transform: uppercase;color: white;"> <span class="glyphicon glyphicon-log-out" style="color: white;font-size:20px;"></span> Sair</a>
-                </div>
-
-            </div>
-
-        </nav>
+        <jsp:include page="header.jsp"/>
         <div class="container">
             <div class="page-header" style="margin-top: 5%">
                 <center>
@@ -39,34 +29,63 @@
                 <div class="col-sm-4" id="caixa">
                     <form style="margin-top: 6%">
                         <div class="form-group">
-                            <label for="endereco">Endereço</label>
+                            <label for="endereco">Endereço</label> <label class="asterisco">*</label>
                             <input type="text" class="form-control" id="endereco">
                         </div>                   
 
                         <div class="form-group">
-                            <label for="numero">Número</label>
+                            <label for="numero">Número</label> <label class="asterisco">*</label>
                             <input type="text" class="form-control" id="numero">
                         </div>
 
 
                         <div class="form-group">
-                            <label for="complemento">Complemento</label>
+                            <label for="complemento">Complemento</label> 
                             <input type="text" class="form-control" id="complemento">
                         </div>
 
                         <div class="form-group">
-                            <label for="bairro">Bairro</label>
+                            <label for="bairro">Bairro</label> <label class="asterisco">*</label>
                             <input type="text" class="form-control" id="bairro">
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="cidade">Cidade</label>
+                            <label for="cidade">Cidade</label> <label class="asterisco">*</label>
                             <input type="text" class="form-control" id="cidade">
                         </div>
-                        
+
                         <div class="form-group">
-                            <label for="uf">UF</label>
-                            <input type="text" class="form-control" id="uf">
+                            <label for="uf">UF</label> <label class="asterisco">*</label>
+                            <select name="uf" id="uf" class="custom-select">
+                                <option value="">Selecione</option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
                         </div>
 
                         <a class="btn btn-danger" style="margin-bottom: 4%" href="adicionar.jsp">Voltar</a>  

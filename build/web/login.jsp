@@ -38,7 +38,7 @@ and open the template in the editor.
                             <label for="senha">Senha</label>
                             <input type="text" class="form-control" id="senha">
                         </div>
-                        <button class="btn btn-success btn-block" style="margin-bottom: 4%">Logar</button>
+                        <a class="btn btn-success btn-block" style="margin-bottom: 4%" href="contato.jsp">Logar</a>
 
                         <div class="row">
                             <center>
